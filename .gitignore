@@ -1,0 +1,24 @@
+# --- build outputs & CMake deps ---
+build/
+cmake-build*/
+embedded/build/
+embedded/**/_deps/
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# --- compiled objects ---
+*.o
+*.obj
+*.elf
+*.map
+*.bin
+*.hex
+*.uf2
+
+# --- logs & misc ---
+*.log
+
