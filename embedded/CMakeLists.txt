@@ -7,9 +7,12 @@ add_executable(embedded
 	led.c
 	lcd.c
 	encoder.c
+	rfm69c.c
+	spi.c
+
 )
 pico_enable_stdio_usb(embedded 1)
 pico_enable_stdio_uart(embedded 1)
 pico_add_extra_outputs(embedded)
-target_link_libraries(embedded pico_stdlib hardware_pwm)
+target_link_libraries(embedded pico_stdlib hardware_pwm hardware_spi)
  
